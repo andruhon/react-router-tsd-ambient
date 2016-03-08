@@ -1,8 +1,9 @@
 // Type definitions for React Router 0.13.3
 // Project: https://github.com/rackt/react-router
 // Definitions by: Yuichi Murata <https://github.com/mrk21>, Václav Ostrožlík <https://github.com/vasek17>
+// Definitions: https://github.com/borisyankov/DefinitelyTyped
 
-// ///<reference path='../react/react.d.ts' />
+///<reference path='../react/react.d.ts' />
 
 declare module ReactRouter {
     import React = __React;

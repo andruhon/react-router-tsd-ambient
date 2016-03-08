@@ -1,6 +1,6 @@
 
-// /// <reference path="../react/react.d.ts" />
-// /// <reference path="../react/react-dom.d.ts" />
+/// <reference path="../react/react.d.ts" />
+/// <reference path="../react/react-dom.d.ts" />
 /// <reference path="./history.d.ts" />
 /// <reference path="./react-router.d.ts" />
 
@@ -10,7 +10,26 @@ import * as ReactDOM from "react-dom"
 
 import { browserHistory, hashHistory, Router, Route, IndexRoute, Link } from "react-router"
 
+interface MasterContext {
+	router: ReactRouter.RouterOnContext;
+}
+
 class Master extends React.Component<React.Props<{}>, {}> {
+
+	static contextTypes: React.ValidationMap<any> = {
+		router: React.PropTypes.object
+	};
+	context: MasterContext;
+
+	navigate() {
+		var router = this.context.router;
+		router.push("/users");
+		router.push({
+			pathname: "/users/12",
+			query: { modal: true },
+			state: { fromDashboard: true }
+		});
+	}
 
 	render() {
 		return <div>

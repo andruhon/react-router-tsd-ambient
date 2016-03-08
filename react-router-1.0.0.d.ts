@@ -1,9 +1,10 @@
 // Type definitions for react-router v1.0.0
 // Project: https://github.com/rackt/react-router
 // Definitions by: Sergey Buturlakin <http://github.com/sergey-buturlakin>, Yuichi Murata <https://github.com/mrk21>, Václav Ostrožlík <https://github.com/vasek17>
+// Definitions: https://github.com/borisyankov/DefinitelyTyped
 
 
-// /// <reference path="../react/react.d.ts" />
+/// <reference path="../react/react.d.ts" />
 /// <reference path="./history.d.ts"/>
 
 

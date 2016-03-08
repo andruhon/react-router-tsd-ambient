@@ -1,7 +1,7 @@
 {
   "name": "retyped-react-router-tsd-ambient",
   "description": "TypeScript typings for react-router",
-  "version": "1.0.0-0",
+  "version": "1.0.2",
   "licence": "MIT",
   "repository": "https://github.com/retyped/react-router-tsd-ambient",
   "typescript": {
